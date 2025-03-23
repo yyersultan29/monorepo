@@ -3,6 +3,7 @@
 'use client'
 
 import { formatDate, formatDateTime } from "@repo/utils/index";
+import {Button, Card} from '@repo/ui/index'
 
 export default function ProfilePage() {
     const date = new Date().toISOString();
@@ -12,6 +13,10 @@ export default function ProfilePage() {
            
            <h4>Date: {formatDate(date)}</h4>
             <h5>Date Time: {formatDateTime(date)}</h5> 
+            <Button appName="Hello admin">Click me to see</Button>
+            <Card>
+                Container is good
+            </Card>
         </div>
     )
 }
