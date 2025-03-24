@@ -1,0 +1,48 @@
+
+.base {
+    padding: 10px;
+    color: #333;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+
+.base:hover {
+    opacity: .8;
+}
+
+.base:active{
+    opacity: 1;
+}
+
+.small {
+    font-size: 14px;
+    padding: 8px;
+}
+.medium {
+    font-size: 16px;
+    padding: 10px;
+}
+.large {
+    font-size: 20px;
+    padding: 12px;
+}
+
+.primary {
+    background-color: #EF2A39;
+    color: white;
+}
+
+
+
+.secondary {
+    background-color: #3C2F2F;
+    color: white;
+}
+
+.ghost {
+    background-color: #F3F4F6;
+    color: #6A6A6A;
+}

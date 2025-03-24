@@ -1,17 +1,13 @@
 import React, { HTMLAttributes } from "react";
+import styles from './styles.module.css'
 
 type CardProps = HTMLAttributes<HTMLDivElement>;
 
 export const Card: React.FC<CardProps> = (props) => {
-  const { children, style, ...restProps } = props;
+  const { children,  ...restProps } = props;
   return (
     <div
-      style={{
-        padding: "10px",
-        border: "1px solid #f3f3f3",
-        borderRadius: "10px",
-        ...style,
-      }}
+      className={styles.card}
       {...restProps}
     >
       {children}
