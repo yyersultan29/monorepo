@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { ReactNode } from "react";
@@ -16,9 +14,10 @@ export const Button = ({ children, className, appName }: ButtonProps) => {
       className={className}
       onClick={() => alert(`Hello from your ${appName} app!`)}
       style={{
-        background:"green",
-        padding:"10px",
-        color:"white"
+        background: "green",
+        padding: "10px",
+        color: "white",
+        borderRadius: "10px",
       }}
     >
       {children}
