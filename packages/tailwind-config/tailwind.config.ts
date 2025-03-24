@@ -1,7 +1,7 @@
 
 import type { Config } from "tailwindcss";
 
-const config: Omit<Config, "content"> = {
+const sharedConfig: Config = {
   theme: {
     extend: {
       backgroundImage: {
@@ -11,8 +11,12 @@ const config: Omit<Config, "content"> = {
       colors: {
         primary: "#EF2A39", 
       },
+      fontSize: {
+        "xxl": "34px",
+      },
+
     },
   },
   plugins: [],
 };
-export default config;
+export default sharedConfig;
