@@ -38,7 +38,7 @@ jobs:
           node-version: 18
           cache: 'npm'
       - run: npm install
-      - run: npx turbo run lint
+      - run: npm run lint
 
   build:
     runs-on: ubuntu-latest
@@ -50,7 +50,7 @@ jobs:
           node-version: 18
           cache: 'npm'
       - run: npm install
-      - run: npx turbo run build --filter=...[HEAD^]
+      - run: npm run build
 
   deploy-managers:
     name: Deploy Web App
