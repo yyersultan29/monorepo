@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="w-full h-full flex justify-center items-center flex-col gap-3">
     
-      <h2>THIS IS ADMIN APP </h2>
+      <h2> ADMIN APP </h2>
       <div>Current date: {formatDate(date)}</div>
     </div>
   );
