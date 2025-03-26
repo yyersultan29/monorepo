@@ -38,8 +38,6 @@ export default function ProfilePage() {
         ))}
       </Stack>
       <Button.primary size="l">Hello mans</Button.primary>
-
-    
       
     </div>
   );
